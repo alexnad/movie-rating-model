@@ -1,0 +1,7 @@
+We have a recommendation model that is suggesting movie titles based on the userId. The attached py script has the purpose to train and save a simple recommender (takes around 30s) in the file directory. The necessary packages you will need to run the file are: numpy, tensorflow, tensorflow_datasets, tensorflow_recommenders. Also, in the file you will find functions for generating, saving and loading a model, and predicting recommendation given an input (i.e. userId).
+
+The task is to build a simple API and create various tests (e.g. functional tests for the endpoint, unit tests - keeping in mind that the model class can change such as to include gender as a input variable). The API should have the following functionalities:
+1) An endpoint that recommends movies to a particular user, given their userId only. Here, you can define you response as you want.
+2) An endpoint that accepts multiple usersId, or loads a file with userIds, and recommends movies for each user, again given only their id. At the end it should send a json with all usersId and their respective recommendation, or write the predictions and userIds in a file.
+
+Finally, in your opinion, what is the fastest way of receiving user recommendations in our case? What about known and unknown userIds?
